@@ -1,0 +1,67 @@
+## Pandas
+[pandas documentation!](https://pandas.pydata.org/docs/getting_started/tutorials.html)
+## Numpy
+
+#### Series
+#### DataFrame
+**dictionary to data frame
+  Merging and joining two dataframe
+  merge
+      -_left, right, inner_
+  join
+      - _left, right, outer_
+  
+**
+
+##### analyzing data set
+1. type(cars) _check the typye_
+2. dataframe.head(kwargs) _view only the upper records_
+3. dataframe.tail() _view only the last lower records_
+4. dataframe.shape _view number of row and columns in the dataframe_
+5. dataframe.info(null_counts=True) _print a concise summary of the columns_
+6. dataframe.mean() _mean_
+7. dataframe.meadian() _check the median_
+8. dataframe.std() _standard deviation_
+9. dataframe.max() and cars.min() _maximum and minimum of each attribute_
+10. dataframe.count() _number of non-null records in each column_
+11. dataframe.describe() _describe statistics summary_
+
+
+##### Cleaning the dataSet
+
+1. dataframe = dataframe.rename(columns ={'unnamede : 1':'model'}) _rename column_
+2. dataframe.Title = dataframe.Title.fillna(dataframe.Title.mean()) _Fill the null values with mean of the column_
+3. dataframe = dataframe.drop(columns =[["ColumnTitle"]]) _drop or remove unwanted column_
+4. dataframe2 = dataframe[['row1col1', 'row1col2','row1col3']].corr() _find correlation matrix_
+5. dataframe.Title = dataframe.Title.astype(float) _change from string to float_
+   - dataframe.info(null_counts=True) _see the change_
+
+
+#### Manipulating the Dataset
+
+**to perform indexing on the dataset, to set value for a column, manipulate data using lambda function, how to sort column, to filter your record**
+
+1. dataframe.iloc[:,4] _view by indexing column only_
+2. dataframe.iloc[6:, 4:] _for atributes from column_1 to last column to see all the records from index 6_
+3. dataframe.loc[:, "title"] _see all the record of title column_
+4. dataframe['am'] = 1 _set value to column 'am'_
+5. dataframe.sort_values(by='title') _sorting 'title' column ascending order_
+6. dataframe['title'] > 6 _filter records with more than 6 cyclinders_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
